@@ -8,3 +8,4 @@ D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Proj
 D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.csproj.CoreCompileInputs.cache
 D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.exe
 D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.pdb
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top_Trumps_Project.Form1.resources

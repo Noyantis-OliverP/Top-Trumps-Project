@@ -26,7 +26,17 @@ namespace Top_Trumps_Project
         {
             if (File.Exists("SavedDeck.txt"))
             {
-                
+                string[] lines = File.ReadAllLines("SavedDeck.txt");
+                int lineCount = lines.Length;
+
+                for (int i = 0; i < (lineCount / 12); i++)
+                {
+                    cardDeck.Add(new List<String>());
+                    for (int x = 0; x < 12; x++)
+                    {
+                        cardDeck[i].Add(lines[x + (i * 12)]);
+                    }
+                }
             }
             else
             {
@@ -52,13 +62,9 @@ namespace Top_Trumps_Project
                 for (int x = 0; x < 12; x++)
                 {
                     File.AppendAllText("SavedDeck.txt", cardDeck[i][x] + "\n");
-                    Console.WriteLine(cardDeck[i][x]);
                 }
-                File.AppendAllText("SavedDeck.txt", "-----\n");
             }
-
-
-            //this.Close();
+            this.Close();
         }
 
         private void txtBox_Card_Name_TextChanged(object sender, EventArgs e)
@@ -106,7 +112,6 @@ namespace Top_Trumps_Project
             if (cardDeck[onCard][3] != "")
             {
                 lab_Card_Preview_Attribute2_Name.Text = cardDeck[onCard][3];
-                Console.WriteLine("triggered");
             }
             else
             {
@@ -209,6 +214,14 @@ namespace Top_Trumps_Project
         private void txtBox_Image_TextChanged(object sender, EventArgs e)
         {
             cardDeck[onCard][11] = txtBox_Image.Text;
+            try
+            {
+                picBox_Card_Image.Image = Image.FromFile(cardDeck[onCard][11]);
+            }
+            catch
+            {
+                picBox_Card_Image.Image = null;
+            }
         }
 
         private void btn_Previous_Card_Click(object sender, EventArgs e)
@@ -218,7 +231,6 @@ namespace Top_Trumps_Project
                 onCard--;
                 TextChange();
             }
-            Console.WriteLine(onCard);
         }
 
         private void btn_Next_Card_Click(object sender, EventArgs e)
@@ -228,13 +240,11 @@ namespace Top_Trumps_Project
                 onCard++;
                 TextChange();
             }
-            Console.WriteLine(onCard);
         }
 
         private void btn_Create_New_Card_Click(object sender, EventArgs e)
         {
             onCard = listLength;
-            Console.WriteLine(onCard);
             cardDeck.Add(new List<String>());
             for (int i = 0; i < 12; i++)
             {
@@ -248,16 +258,13 @@ namespace Top_Trumps_Project
         {
             if (listLength > 1)
             {
-                Console.WriteLine(onCard);
                 cardDeck.RemoveAt(onCard);
                 if (onCard > 0)
                 {
                     onCard--;
-                    Console.WriteLine(onCard);
                 }
                 listLength = cardDeck.Count;
                 TextChange();
-                Console.WriteLine(listLength);
             }
         }
 
@@ -297,7 +304,6 @@ namespace Top_Trumps_Project
             if (cardDeck[onCard][3] != "")
             {
                 lab_Card_Preview_Attribute2_Name.Text = cardDeck[onCard][3];
-                Console.WriteLine("triggered");
             }
             else
             {
@@ -374,6 +380,7 @@ namespace Top_Trumps_Project
                 lab_Card_Preview_Attribute5_Value.Text = "Value";
             }
 
+            txtBox_Image.Text = cardDeck[onCard][11];
             lab_Card_Number.Text = "Card " + Convert.ToString(onCard + 1);
         }
     }

@@ -62,6 +62,7 @@
             this.txtBox_Card_Name = new System.Windows.Forms.TextBox();
             this.lab_Card_Name = new System.Windows.Forms.Label();
             this.panel_Card_Preview = new System.Windows.Forms.Panel();
+            this.lab_Card_Number = new System.Windows.Forms.Label();
             this.btn_Next_Card = new System.Windows.Forms.Button();
             this.btn_Previous_Card = new System.Windows.Forms.Button();
             this.lab_Card_Preview = new System.Windows.Forms.Label();
@@ -81,9 +82,8 @@
             this.lab_Card_Preview_Attribute4_Name = new System.Windows.Forms.Label();
             this.lab_Card_Preview_Attribute2_Name = new System.Windows.Forms.Label();
             this.lab_Card_Preview_Attribute1_Name = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBox_Card_Image = new System.Windows.Forms.PictureBox();
             this.lab_Card_Preview_Card_Name = new System.Windows.Forms.Label();
-            this.lab_Card_Number = new System.Windows.Forms.Label();
             this.panel_Background.SuspendLayout();
             this.panel_Card_Preview.SuspendLayout();
             this.panel_Card_Preview_Card.SuspendLayout();
@@ -92,7 +92,7 @@
             this.panel_Attribute4_Value.SuspendLayout();
             this.panel_Attribute5_Value.SuspendLayout();
             this.panel_Attribute1_Value.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Card_Image)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Exit
@@ -475,6 +475,16 @@
             this.panel_Card_Preview.Size = new System.Drawing.Size(388, 499);
             this.panel_Card_Preview.TabIndex = 4;
             // 
+            // lab_Card_Number
+            // 
+            this.lab_Card_Number.AutoSize = true;
+            this.lab_Card_Number.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_Card_Number.Location = new System.Drawing.Point(3, 467);
+            this.lab_Card_Number.Name = "lab_Card_Number";
+            this.lab_Card_Number.Size = new System.Drawing.Size(67, 25);
+            this.lab_Card_Number.TabIndex = 4;
+            this.lab_Card_Number.Text = "Card 1";
+            // 
             // btn_Next_Card
             // 
             this.btn_Next_Card.Location = new System.Drawing.Point(320, 228);
@@ -519,7 +529,7 @@
             this.panel_Card_Preview_Card.Controls.Add(this.lab_Card_Preview_Attribute4_Name);
             this.panel_Card_Preview_Card.Controls.Add(this.lab_Card_Preview_Attribute2_Name);
             this.panel_Card_Preview_Card.Controls.Add(this.lab_Card_Preview_Attribute1_Name);
-            this.panel_Card_Preview_Card.Controls.Add(this.pictureBox1);
+            this.panel_Card_Preview_Card.Controls.Add(this.picBox_Card_Image);
             this.panel_Card_Preview_Card.Controls.Add(this.lab_Card_Preview_Card_Name);
             this.panel_Card_Preview_Card.Location = new System.Drawing.Point(83, 67);
             this.panel_Card_Preview_Card.Name = "panel_Card_Preview_Card";
@@ -681,14 +691,14 @@
             this.lab_Card_Preview_Attribute1_Name.TabIndex = 2;
             this.lab_Card_Preview_Attribute1_Name.Text = "Attribute 1:";
             // 
-            // pictureBox1
+            // picBox_Card_Image
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 153);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picBox_Card_Image.BackColor = System.Drawing.Color.White;
+            this.picBox_Card_Image.Location = new System.Drawing.Point(11, 28);
+            this.picBox_Card_Image.Name = "picBox_Card_Image";
+            this.picBox_Card_Image.Size = new System.Drawing.Size(200, 153);
+            this.picBox_Card_Image.TabIndex = 1;
+            this.picBox_Card_Image.TabStop = false;
             // 
             // lab_Card_Preview_Card_Name
             // 
@@ -700,16 +710,6 @@
             this.lab_Card_Preview_Card_Name.Size = new System.Drawing.Size(89, 21);
             this.lab_Card_Preview_Card_Name.TabIndex = 0;
             this.lab_Card_Preview_Card_Name.Text = "Card Name";
-            // 
-            // lab_Card_Number
-            // 
-            this.lab_Card_Number.AutoSize = true;
-            this.lab_Card_Number.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_Card_Number.Location = new System.Drawing.Point(3, 467);
-            this.lab_Card_Number.Name = "lab_Card_Number";
-            this.lab_Card_Number.Size = new System.Drawing.Size(67, 25);
-            this.lab_Card_Number.TabIndex = 4;
-            this.lab_Card_Number.Text = "Card 1";
             // 
             // Form1
             // 
@@ -741,7 +741,7 @@
             this.panel_Attribute5_Value.PerformLayout();
             this.panel_Attribute1_Value.ResumeLayout(false);
             this.panel_Attribute1_Value.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Card_Image)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -799,7 +799,7 @@
         private System.Windows.Forms.Label lab_Card_Preview_Attribute4_Name;
         private System.Windows.Forms.Label lab_Card_Preview_Attribute2_Name;
         private System.Windows.Forms.Label lab_Card_Preview_Attribute1_Name;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBox_Card_Image;
         private System.Windows.Forms.Label lab_Card_Preview_Card_Name;
         private System.Windows.Forms.Button btn_Next_Card;
         private System.Windows.Forms.Button btn_Previous_Card;
