@@ -1,0 +1,10 @@
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\bin\Debug\Top Trumps Project.exe.config
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\bin\Debug\Top Trumps Project.exe
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\bin\Debug\Top Trumps Project.pdb
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.csproj.AssemblyReference.cache
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.csproj.SuggestedBindingRedirects.cache
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top_Trumps_Project.Properties.Resources.resources
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.csproj.GenerateResource.cache
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.csproj.CoreCompileInputs.cache
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.exe
+D:\App Development\Apprenticeship Course Apps\Top Trumps Project\Top-Trumps-Project\Top Trumps Project\Top Trumps Project\obj\Debug\Top Trumps Project.pdb
